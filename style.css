@@ -1,0 +1,478 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family:Alterra Display;
+    src: url(./AlterraDisplay-Regular.ttf);
+  }
+  @font-face {
+    font-family:Unsubscribe;
+    src: url(./Neontube-Bold.ttf);
+  }
+  @font-face {
+    font-family:PP NeueBit;
+    src: url(./PPNeueBit-Regular.ttf);
+  }
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* cursor: none;    */
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+
+}
+
+*::-webkit-scrollbar{
+    display: none;
+ }
+/* .cursor{
+    display: none;
+    position: absolute;
+    z-index: 9999999999;
+    transform: translate(-50%,-50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    width: 12vh;
+    height: 12vh;
+    border-radius:50% ;
+    transform-origin: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://portal.thenifty.com/static_homepage/images/cursor.svg);
+} */
+.d{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#main{
+    
+    
+    width: 100%;
+    background-color: #EBE4CB;
+    padding: 1px;
+
+}
+#full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 1.8vw;
+    background-color: #282828;
+    background-image: url(https://portal.thenifty.com/static_homepage/images/dots.svg);
+    background-size: repeat;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid transparent;
+}
+.topbar{
+    width: 95%;
+    height: 5vw;
+    border: 2px solid #EBE4CB;
+    border-radius: 1.8vw;
+    position: relative;
+    
+    overflow: hidden;
+    /* transform: translate(-50%,0); */
+    background-color: #1f1f1f;
+    margin: 3vw 0;
+}
+.topbarIN{
+
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    color: #EBE4CB;
+    display: flex;
+    align-items: center;
+    font-family: "Alterra Display";
+}
+.topbar h1{
+    font-weight: 100;
+    font-size: 2vw;
+    white-space: nowrap;
+    
+}
+.topbarIN img{
+    height: 70%;
+}
+.portal{
+
+    width: 95vw;
+    position: relative;
+    
+    /* transform: translate(-50%,0); */
+}
+
+.portal svg{
+    width: 95vw;
+    /* background-color: rgb(255, 0, 0); */
+    height: 20vw;
+    
+    fill: transparent;
+    stroke: #EBE4CB;
+    stroke-dasharray: 1160;
+    stroke-dashoffset: 1160;
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) 5s;
+}
+
+
+.scnd{
+    width: 100%;
+    height: 150vw;
+    flex-direction: column;
+}
+.scndimg{
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+    height: 100%;
+    border: 2px solid #EBE4CB;
+    border-radius: 1.8vw;
+}
+.scndimg video{
+    width: 100%;
+    height: 100%;   
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 5s;
+}
+.scndtl{
+    position: absolute;
+    z-index: 5;
+    top: -2px;
+    right: -2px;
+    width: 70%;
+    height: 28vw;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #EBE4CB;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden;
+}
+.top{
+    width: 100%;
+    height: 18%;
+    border-bottom: 2px solid #EBE4CB;
+    display: flex;
+    font-family: "Alterra Display";
+}
+.top h1{
+    color: #EBE4CB;
+    font-weight: 100;
+}
+.top .one{
+    font-size: 1vw;
+    width: 28%;
+    border-right: 2px solid #EBE4CB;
+}
+.top .two{
+    width: 13%;
+    border-right: 2px solid #EBE4CB;
+}
+.top .two img{
+    height: 70%;
+}
+.top .three{
+    font-family:"PP NeueBit" ;
+    width:20%;
+    font-size: 1.8vw;
+    border-right: 2px solid #EBE4CB;
+}
+.top .four{
+    width: 19%;
+    border-right: 2px solid #EBE4CB;
+}
+.top .four img{
+    height: 60%;
+}
+.top .five{
+    width:20%;
+    border-right: 2px solid #EBE4CB;
+}
+.five h1{
+    
+    font-size:1.5vw;
+    font-weight: 100;
+}
+.btm {
+    width: 100%;
+    height: 82%;
+    display: flex;
+    justify-content: center;
+}
+.btm .left{
+    height: 100%;
+    width: 41%;
+    border-right: 2px solid #EBE4CB;
+    position: relative;
+}
+.btm .left .tangl{
+    position: absolute;
+    margin-top: 3vw;
+    transform: translate(-0%,-10%);
+    /* background-color: black; */
+}
+
+
+
+.btm .left .tangl img{
+    height: 100%;
+    object-fit: cover;
+}
+.btm .right{
+    color: #EBE4CB;
+    font-family:"Unsubscribe" ;
+    padding: 1vw;
+    height: 100%;
+    width: 59%;
+    font-size:1.5vw;
+}
+.btm .right .rbtm{
+    
+    position: absolute;
+    bottom: 7%;
+    right: 3%;
+    text-align: right;
+}
+.btm .right .rbtm h1{
+    font-family: "PP NeueBit";
+    font-size: 2.5vw;
+    font-weight: 100;
+}
+
+.scndbl{
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width:40vw;
+    height: 5vw;
+    background-color: #EBE4CB;
+    border-top-right-radius: 30px;
+    padding: 0 2vw;
+}
+.scndbl img{
+    height: 60%;
+}
+.scndbl h1{
+    font-size: 2.5vw;
+    white-space: nowrap;
+    font-family: "Unsubscribe";
+}
+.scndbl .line{
+    background-color: #282828;
+    height: 100%;
+    width: 3px;
+}
+.scnd .topbar{
+    height: 10vw;
+}
+
+.scnd .topbarIN h1{
+    font-family: "Unsubscribe";
+    font-weight: 100;
+    font-size: 3vw;
+    line-height:2.5vw;
+    margin-right: 2vw;
+}
+.scnd .topbarIN span{
+    font-family: "Unsubscribe";
+    font-size: 7vw;
+    font-weight: 100;
+}
+.scnd .topbarIN img{
+    height: 60%;
+    margin-right: 2vw;
+
+}
+.third{
+    width: 100vw;
+    height: 55vw;
+}
+.cntr{
+    width: 95vw;
+    background-color: #1f1f1f;
+    height: 45vw; 
+    border: 2px solid #EBE4CB;
+    border-radius: 1.8vw;
+    color: #EBE4CB;
+    overflow: hidden;
+}
+.cntr .lcntr{
+    width: 100%;
+    height: 45vw;
+    border-right: .2vw solid #EBE4CB;
+    padding:2vw;
+    position: relative;
+}
+.lcntr h1{
+    font-family: "Alterra Display";
+    font-weight: 100;
+    font-size: 1.3vw;
+    line-height: 3vw;
+}
+.lcntr h2{
+    font-family: "PP NeueBit";
+    font-weight: 100;
+    font-size: 2.2vw;
+    margin-top: 1vw;
+}
+.lcntr h1 span{
+    font-family: "Alterra Display";
+    padding: .3vw;
+    padding-bottom: .3vw;
+    font-weight: 100;
+    color: #1f1f1f;
+    background-color: #EBE4CB;
+}
+.cntr .lcntr .lcntrbtm{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: .2vw solid #EBE4CB;
+    /* border: 2px solid #EBE4CB; */
+}
+.cntr .lcntr .lcntrbtm .btm1{
+height: 100%;
+width: 25%;
+border-right:2px solid #EBE4CB ;
+}
+.cntr .lcntr .lcntrbtm .btm2{
+height: 100%;
+width: 25%;
+border-right:2px solid #EBE4CB ;
+}
+
+.cntr .lcntr .lcntrbtm .btm3{
+height: 100%;
+width: 15%;
+border-right:2px solid #EBE4CB ;
+}
+
+.cntr .lcntr .lcntrbtm .btm4{
+height: 100%;
+width: 35%;
+}
+.cntr .lcntr .lcntrbtm img{
+    height: 60%;
+}
+.cntr .lcntr .lcntrbtm .btm2 h1{
+    font-family: PP NeueBit;
+    font-size: 3.8vw;
+}
+
+.cntr .rcntr{
+    width: 50vw;
+    height: 45vw;
+    display: flex;
+    
+}
+.cntr .rcntr .lrcntr{
+    width: 60vw;
+    height: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #EBE4CB;
+    flex-direction: column;
+    border-left: 2px solid #EBE4CB;
+}
+.cntr .rcntr .lrcntr h1{
+    font-family: "Unsubscribe";
+    font-size: 4.5vw;
+    line-height: 5vw;
+    color: transparent;
+    -webkit-text-stroke: 1px #EBE4CB;
+}
+.cntr .rcntr .lrcntr span{
+    font-size:9vw;
+    
+}
+.rrcntr{
+    width: 100%;
+    height: 45vw;
+}
+.taap {
+    height: 30%;
+    width: 100%;
+    border-bottom: 2px solid #EBE4CB;
+}
+.circle{
+    position: absolute;
+    transform: rotate(40deg);
+    border-radius: 50%;
+    border: 1px solid #EBE4CB;
+}
+.baatm{
+    height: 70%;
+    width: 100%;
+}
+.rect{
+    height: 80%;
+    width: 50%;
+    border: 2px solid #EBE4CB;
+    border-radius: 1.8vw;
+}
+.rect h1{
+    
+    font-family: "PP NeueBit";
+    font-size: 6vw;
+    font-weight: 100;
+}
+.fourth{
+    width: 100vw;
+    /* height: 50vh; */
+    flex-direction: column;
+
+}
+.social{
+    margin: 3vw 0;
+    width: 95vw;
+    height: 7vw;
+    display: flex;
+    background-color: #1f1f1f;
+    border-radius: 1.8vw;
+    border: 2px solid #EBE4CB;
+    overflow: hidden;
+    font-family: "Alterra Display";
+    color: #EBE4CB;
+    font-size: 1.7vw;
+}
+.vox{
+    width: 35vw;
+    height: 7vw;
+    border-right:2px solid #EBE4CB ;
+}
+.vox2{
+    width: 15vw;
+    height: 7vw;
+    border-right:2px solid #EBE4CB ;
+}
+@media(max-width:500px){
+    .scnd{
+        height: 250vw;
+    }
+    .btm .left .tangl{
+        margin-top: 2vw;
+        transform: translate(-0%,-10%) scale(.7);
+    }
+    .cntr .rcntr .lrcntr{
+        display: none;
+    }
+    
+    
+}
